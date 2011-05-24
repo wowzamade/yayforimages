@@ -1,0 +1,283 @@
+/* Body, Doc, Header and Footer
+--------------------------------------------------------------------------------------- */
+
+body {
+	background: #fafafa;
+	font-size: 62.5%;
+	line-height: 1em;
+}
+
+#doc {
+	text-align: left;
+}
+
+#doc, form, textarea, input, select, option {
+	font-family: Arial, Verdana, sans-serif; 
+	color: #101010;
+}
+
+
+/* Header
+--------------------------------------------------------------------------------------- */
+
+#header {
+
+}
+
+
+/* Main
+--------------------------------------------------------------------------------------- */
+
+#main {
+
+}
+
+#main p {
+	font-size: 1.4em;
+	line-height: 1.5em;
+}
+
+
+/* Footer
+--------------------------------------------------------------------------------------- */
+
+#footer {
+
+}
+
+#footer p {
+	font-size: 1em;
+	line-height: 1.25em;
+	color: #808080;
+}
+
+
+/* Nav
+--------------------------------------------------------------------------------------- */
+
+#nav {
+	font-size: 1.2em;
+}
+
+#nav li {
+	display: block;
+	float: left;
+}
+
+#nav li a, #nav li a:link, #nav li a:visited {
+	display: block;
+	padding: 0.5em 1em 0.5em 0em;
+}
+
+#nav li.selected a, #nav li.selected a:link, #nav li.selected a:visited {
+
+}
+
+
+/* Sub/Side Nav
+--------------------------------------------------------------------------------------- */
+
+#sub_nav {
+
+}
+
+
+/* Headings
+--------------------------------------------------------------------------------------- */	
+
+h1 { font-size: 2.5em; line-height: 1.5em; margin-top: 0.5em; }
+
+h2 { font-size: 2em; line-height: 1.5em; margin-top: 1em; }
+
+h3 { font-size: 1.6em; line-height: 1.5em; }
+
+h4 { font-size: 1.4em; line-height: 1.5em; }
+
+
+/* Text Elements
+--------------------------------------------------------------------------------------- */
+
+p {
+	margin-bottom: 1em;
+}
+
+span {
+
+}
+
+strong {
+	font-weight: bold;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.light_text {
+	color: #707070;
+}
+
+
+/* Links
+--------------------------------------------------------------------------------------- */	
+
+a, a:link, a:visited {
+	color: #1111cc;
+	text-decoration: underline;
+}
+
+a:hover, a:focus {
+	text-decoration: none;
+}
+
+
+/* Forms
+--------------------------------------------------------------------------------------- */	
+
+form, textarea, input, select, option {
+
+}
+
+label {
+
+}
+
+select, option {
+
+}
+
+input.text {
+
+}
+
+input.button {
+
+}
+
+
+/* Tables
+--------------------------------------------------------------------------------------- */	
+
+table			{	width: 100%;				}
+th 				{	cursor: default;			}
+table, tr, td 	{	border-collapse: collapse;	}
+td 				{	vertical-align: top;		}
+
+table.tablesorter th {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+table.borders tbody td {
+	border-top: 1px solid #ccc;
+	border-right: 1px solid #cfcfcf;
+	border-bottom: 1px solid #eee;
+	border-left: 1px solid #e0e0e0;
+}
+
+table.cell_padding th, table.cell_padding td {
+	padding: 0.5em;		
+}
+
+th {
+	font-size: 1.3em;
+	line-height: 1.5em;	
+}
+
+td {
+	font-size: 1.2em;
+	line-height: 1.5em;
+}
+
+tfoot td {
+	font-size: 1em;
+	line-height: 1.25em;
+	color: #999;
+}
+
+tr.even {
+	background: #f5f5f5;
+}
+
+tr.odd {
+	background: #fdfdfd;
+}
+
+
+/* Lists
+--------------------------------------------------------------------------------------- */
+
+ul {
+
+}
+
+li {
+
+}
+
+ul.normal {
+	list-style-type: disc;
+	list-style: disc;
+}
+
+ul.normal li {
+	list-style-type: disc;
+	list-style: disc;
+	margin-left: 20px;
+}
+
+
+/* Special Rules Setup
+--------------------------------------------------------------------------------------- */
+
+.nolorf				{	font-size: 0px;	line-height: 0px;			}
+.nowrap				{	white-space: nowrap;						}
+
+.margin				{	margin: 10px;								}
+
+.pv					{	padding-top: 10px; padding-bottom: 10px;	}
+.ph					{	padding-left: 10px; padding-right: 10px;	}
+.pad				{	padding: 10px;								}
+.pad_double			{	padding: 20px;								}
+.pad_small			{	padding: 5px;								}
+
+.pv_top				{	padding-top: 10px;							}
+.pv_bottom			{	padding-bottom: 10px;						}
+
+.pv_double_top		{	padding-top: 20px;							}
+.pv_double_bottom	{	padding-bottom: 20px;						}
+
+.ph_left			{	padding-left: 10px;							}
+.ph_right			{	padding-right: 10px;						}
+
+.ph_double_left		{	padding-left: 20px;							}
+.ph_double_right	{	padding-right: 20px;						}
+
+.pv_double			{	padding-top: 20px;  padding-bottom: 20px;	}
+.ph_double			{	padding-left: 20px; padding-right: 20px;	}
+.ph_triple			{	padding-left: 30px; padding-right: 30px;	}
+
+.split_top			{	border-top: 1px solid #dedede;				}
+.split_bottom		{	border-bottom: 1px solid #e9e9e9;			}
+
+.tcenter			{	text-align: center;							}
+.tright				{	text-align: right;							}
+.tleft				{	text-align: left;							}
+
+
+/* Floating
+--------------------------------------------------------------------------------------- */	
+
+.left	{ float: left; }
+.right	{ float: right; }
+.clear 	{ clear: both; }
+
+
+/* User Feedback Messages 
+--------------------------------------------------------------------------------------- */	
+
+.message 	{  }
+
+.success	{ background: #44dd55; color: #fff; }
+.error 		{ background: #ff6555; color: #fff; }
+.neutral	{ background: #fff0c5; color: #444; }

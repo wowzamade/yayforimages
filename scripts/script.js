@@ -1,0 +1,66 @@
+/*  ------------------------------------
+	Globals
+------------------------------------- */
+
+
+/*  ------------------------------------
+	On Load
+------------------------------------- */
+$(document).ready(function(){
+	
+	// png fix
+	DD_belatedPNG.fix('.png');
+	
+	// setup sortable tables
+	$('.tablesorter').tablesorter({ widgets: ['zebra'] });
+	
+});
+
+
+
+
+/*  ------------------------------------
+	Notes
+----------------------------------------
+
+Init tablesorter:
+
+	$('.name of table class').tablesorter({ widgets: ['zebra'] });
+
+	
+Create a qtip
+
+	$('.qtip').qtip({
+		content: 	'qtip content',
+		show: 		'mouseover', hide: 'mouseout',
+		style: 		{ name: 'cream', tip: true, 'font-family': '"Lucida Grande", "Lucida Fax", Arial', 'font-size': '12px' },
+		position: 	{ corner: { target: 'bottomRight', tooltip: 'topLeft' } }
+		exclusive:	true,
+	});	
+
+
+Create a dynamic qtip:
+
+	$('.qtip').each(function(){
+		this_content = $(this).parents().find('.target_content').html();	
+		$(this).qtip({ ... });
+	});
+
+
+Do something ajaxy:
+
+	$.ajax({
+		type:		"GET",
+		url: 		"actions/some_action.php",
+		data: 		{ q: var },
+		success: 	function(data){ ... }
+	});
+	
+
+If the user clicks anywhere and it's not this thing, hide this thing
+
+	$(document).bind('click', function(e) {
+		if ( ! $(e.target).hasClass("#this_thing_container") ){ $('#this_thing').hide(); }
+	});
+	
+------------------------------------- */
