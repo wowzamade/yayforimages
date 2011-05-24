@@ -2,18 +2,19 @@
 --------------------------------------------------------------------------------------- */
 
 body {
-	background: #fafafa;
+	background: #FFF;
 	font-size: 62.5%;
 	line-height: 1em;
 }
 
 #doc {
-	text-align: left;
+	 width: 900px;
+	 margin: auto;
 }
 
 #doc, form, textarea, input, select, option {
 	font-family: Arial, Verdana, sans-serif; 
-	color: #101010;
+	color: #545454;
 }
 
 
@@ -37,7 +38,11 @@ body {
 	line-height: 1.5em;
 }
 
+#queue { 
 
+	color: #FFF;
+	border: solid 1px;
+}
 /* Footer
 --------------------------------------------------------------------------------------- */
 
@@ -48,7 +53,7 @@ body {
 #footer p {
 	font-size: 1em;
 	line-height: 1.25em;
-	color: #808080;
+	color: #f9f9f9;
 }
 
 
@@ -67,6 +72,9 @@ body {
 #nav li a, #nav li a:link, #nav li a:visited {
 	display: block;
 	padding: 0.5em 1em 0.5em 0em;
+	color: #545454;
+	font-weight: normal;
+	
 }
 
 #nav li.selected a, #nav li.selected a:link, #nav li.selected a:visited {
@@ -114,7 +122,7 @@ strong {
 }
 
 .light_text {
-	color: #707070;
+	color: #545454;
 }
 
 

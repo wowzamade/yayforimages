@@ -8,7 +8,7 @@
 	// ---------------------------------------- //
 	
 		// Database
-		define('DB_NAME', 'datatable');
+		define('DB_NAME', 'yayforimages');
 		
 		// Username
 		define('DB_USER', 'root');

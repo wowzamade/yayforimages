@@ -12,9 +12,31 @@ $(document).ready(function(){
 	DD_belatedPNG.fix('.png');
 	
 	// setup sortable tables
-	$('.tablesorter').tablesorter({ widgets: ['zebra'] });
+	
+	
+	
+	$('#file_upload').uploadify({
+	    'uploader' 	 		: 'scripts/uploadify/uploadify.swf',
+	    'script'   			: 'scripts/uploadify/uploadify.php',
+	    'cancelImg' 		: 'scripts/uploadify/cancel.png',
+	    'folder'    		: '/yayforimages/uploads/',
+	    'auto'   	   		: false, 
+	    'fileExt'	   		: '*.jpg;*.gif;*.png',
+	    'multi'				: true,
+	    'fileDataName' 		: 'fileArr',
+	    'expressInstall' : 'scripts/uploadify/expressInstall.swf',
+	    'onError': function (event, queueID ,fileObj, errorObj) {
+	    	alert(errorObj.info);
+	    },
+	    'onComplete'  : function(event, ID, fileObj, response, data) {
+     		 alert(response);
+	    }
+	    
+	  });
 	
 });
+
+	  
 
 
 
